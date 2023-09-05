@@ -16,7 +16,7 @@ jobs:
       - name: Run tests
         run: pytest
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy NodeJS app
         uses: appleboy/ssh-action@v0.1.2
