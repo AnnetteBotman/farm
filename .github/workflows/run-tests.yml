@@ -34,5 +34,6 @@ jobs:
               git pull origin main
               git status
               systemctl restart farm
+              systemctl status farm
               echo 'Deployment successful to digital ocean' 
 
