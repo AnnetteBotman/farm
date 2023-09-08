@@ -33,6 +33,7 @@ jobs:
               cd /home/farm    
               git pull origin main
               git status
+              systemctl enable farm
               systemctl restart farm
               systemctl status farm
               echo 'Deployment successful to digital ocean' 
