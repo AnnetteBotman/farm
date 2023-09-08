@@ -33,6 +33,8 @@ jobs:
               cd /home/farm    
               git pull origin main
               git status
+              systemctl disable farm && systemctl stop farm
+              gunicorn main:app --bind 0.0.0.0
               systemctl enable farm
               systemctl restart farm
               systemctl status farm
