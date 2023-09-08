@@ -29,7 +29,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }} # User of the server you want to ssh into
           
           script: |
-              cd /home/farm#    
+              cd /home/farm    
               git pull origin main
               git status
               gunicorn main:app --bind 0.0.0.0
