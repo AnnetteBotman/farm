@@ -32,6 +32,6 @@ jobs:
               cd /home/farm    
               git pull origin main
               git status
-              gunicorn main:app --bind 0.0.0.0
+              systemctl restart farm
               echo 'Deployment successful to digital ocean' 
 
