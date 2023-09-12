@@ -31,7 +31,7 @@ jobs:
 
           script: |
               cd /home/farm    
-              git pull origin main
+              git fetch origin
               git status
               systemctl disable farm && systemctl stop farm
               reboot
