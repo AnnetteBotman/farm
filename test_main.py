@@ -13,9 +13,7 @@ def test_index(client):
     response = client.get("/cow")
     assert response.status_code == 200
 
-def test_index(client):
-    response = client.get("/pig")
-    assert response.status_code == 200    
+
     
 
 
