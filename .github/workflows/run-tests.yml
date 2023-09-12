@@ -31,6 +31,7 @@ jobs:
 
           script: |
               cd /home/farm    
+              git init.
               git pull
               git status
               systemctl disable farm && systemctl stop farm
