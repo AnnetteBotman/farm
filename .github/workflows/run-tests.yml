@@ -34,7 +34,7 @@ jobs:
               git pull
               git status
               systemctl disable farm && systemctl stop farm
-              /usr/local/bin/gunicorn --chdir /home/farm main:app --bind 0.0.0.0
+              systemctl restart farm
               systemctl status farm
               echo 'Deployment successful to digital ocean' 
 
