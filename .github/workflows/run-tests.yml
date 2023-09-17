@@ -35,7 +35,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3  
       - name: Run a script
-        run: ./scripts/commands.sh
+        run: chmod +x ./scripts/commands.sh
 
           # script: |
           #     cd /home/farm    
