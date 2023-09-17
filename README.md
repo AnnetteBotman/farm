@@ -1,6 +1,6 @@
 ## CD assignment
 
-Voor deze opdracht heb ik gebruik gemaakt van de webpagina's die we eerder in de moduel maakten voor de 'farm-opdracht'. 
+Voor deze opdracht heb ik gebruik gemaakt van de webpagina's die we eerder in de module maakten voor de 'farm-opdracht'. 
 
 Het inrichten van de server om de website in de lucht te krijgen was gelukt door het doorlopen van de subopdrachten, maar het was me in het begin niet altijd duidelijk waarom ik bepaalde commando’s lokaal of juist op de server moest geven of waarom ik stukjes tekst in bijvoorbeeld het Nginx' configuration file moest aanpassen. Het duurde best even voor de informatie landde.
 
