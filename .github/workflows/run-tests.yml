@@ -35,8 +35,8 @@ jobs:
       run:
         working-directory: farm/scripts
     steps:
-      # - name: Check out the repository to the runner
-      #   uses: actions/checkout@v3  
+      - name: Check out repository
+        uses: actions/checkout@v3  
       - name: Run a script
         run: commands.sh
 
