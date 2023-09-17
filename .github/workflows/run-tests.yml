@@ -29,12 +29,23 @@ jobs:
           key: ${{secrets.SSH_KEY}} # Private or public key of the server
           username: ${{ secrets.SSH_USERNAME }} # User of the server you want to ssh into
 
-          script: |
-              cd /home/farm    
-              git pull
-              git status
-              systemctl disable farm && systemctl stop farm
-              systemctl restart farm
-              systemctl status farm
-              echo 'Deployment successful to digital ocean' 
+  commands-job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./scripts
+    steps:
+      # - name: Check out the repository to the runner
+      #   uses: actions/checkout@v3  
+      - name: Run a script
+        run: ./commands.sh
+
+          # script: |
+          #     cd /home/farm    
+          #     git pull
+          #     git status
+          #     systemctl disable farm && systemctl stop farm
+          #     systemctl restart farm
+          #     systemctl status farm
+          #     echo 'Deployment successful to digital ocean' 
 
